@@ -18,7 +18,7 @@
   website สำหรับทดลอง  <br>
   https://camwiegert.github.io/baffle/#demo<br>
   <br>
-   website สำหรับดึง CDN <br><br>
+   website สำหรับดึง CDN <br>
   https://www.jsdelivr.com/package/npm/baffle<br>
 
   
