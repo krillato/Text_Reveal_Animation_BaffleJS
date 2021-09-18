@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="../img/duckling/01-born.png" />
+    <title>Ducking Lerning</title>
+    <link rel="stylesheet" type="text/css" media="all" href="Text_reveal.css" />
+
+    <!-- เพิ่มส่วน Script เข้ามาทำงาน -->
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+</head>
+
+<body>
+    <!-- ================= Contaniner of Page =============== -->
+    <div class="content">
+        <div class="container-content">
+            <div class="content-grid">
+
+                <div class="open">
+                    <div class="data_open">                
+                            <div>- Welcome  to TeeTime Page -</p>                
+                       </div>
+                </div>
+                <script type="text/javascript">
+                    const text = baffle(".data_open");
+                    text.set({
+                        character: '█▒░ ▓>░░▒ █▒█▒█ ▓▓█ <▒/▒█ ▒▒░░ ▓▓▓ █░/▒ █░▓▒',
+                        speed: 100 // ความเร็ว
+                    });
+                    text.start();
+                    text.reveal(5500); //ระยะเวลา
+                </script>  
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
