@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +12,124 @@
 
     <!-- เพิ่มส่วน Script เข้ามาทำงาน -->
     <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
+    <style>
+
+    body{
+        -webkit-font-smoothing:antialiased;
+    }
+          main{
+    padding: 10vw 0;
+    margin-top: 700px;
+  }
+
+  ul{
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    list-style-type:none;
+  }
+
+  li{
+    margin: 10vw 0;
+    text-align: left;
+    
+  }
+
+  p{
+    display: block;
+    color: rgb(223, 212, 212);
+    font-family: freesia;
+    font-size: 2vw;
+    font-weight:700 ;
+    line-height: 1.2;
+  }
+
+  p + p{
+    margin-top: 10px;
+  }
+
+  li:first-child{
+    margin-top: 0;
+  }
+
+  li:last-child{
+    margin-bottom: 0;
+  }
+
+  li:nth-child(even){
+    text-align: right;
+  }
+  a{
+    color: #fff;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+
+  [data-reveal="content"]{
+    display: inline-block;
+    position: relative;
+  }
+
+  [data-reveal="cover"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+  }
+
+  [data-reveal="text"]{
+    opacity: 0;
+  }
+
+  [data-js="reveal"].loaded [data-reveal="cover"]{
+    animation:reveal-cover 2s ease-in-out
+  }
+
+  [data-js="reveal"].loaded [data-reveal="text"]{
+    opacity: 1;
+    animation:reveal-cover 2s ease-in-out
+  }
+
+  @keyframes reveal-cover{
+    0%{
+      width: 0;
+      left: 0;
+    }
+    44%{
+      width: 100%;
+      left:0;
+    }
+    54%{
+      width: 100%;
+      left:0;
+    }
+    100%{
+      width: 0%;
+      left:100%;
+    }
+
+  }
+
+  @keyframes reveal-text{
+
+    0%{
+      opacity: 0;
+    }
+    44%{
+      opacity: 0;
+    }
+    54%{
+      opacity: 1;
+    }
+  }
+
+    </style>
+
+    
 </head>
 
 <body>
@@ -22,22 +139,70 @@
             <div class="content-grid">
 
                 <div class="open">
-                    <div class="data_open">                
-                            <div>- Welcome  to TeeTime Page -</p>                
-                       </div>
+                    <div class="data_open">
+                        <div>- Welcome to TeeTime Page -</p>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        const text = baffle(".data_open");
+                        text.set({
+                            character: '█▒░ ▓>░░▒ █▒█▒█ ▓▓█ <▒/▒█ ▒▒░░ ▓▓▓ █░/▒ █░▓▒',
+                            speed: 100 // ความเร็ว
+                        });
+                        text.start();
+                        text.reveal(5500); //ระยะเวลา
+                    </script>
                 </div>
-                <script type="text/javascript">
-                    const text = baffle(".data_open");
-                    text.set({
-                        character: '█▒░ ▓>░░▒ █▒█▒█ ▓▓█ <▒/▒█ ▒▒░░ ▓▓▓ █░/▒ █░▓▒',
-                        speed: 100 // ความเร็ว
-                    });
-                    text.start();
-                    text.reveal(5500); //ระยะเวลา
-                </script>  
-            </div>
             </div>
         </div>
     </div>
+
+    <main>
+        <ul class="inner">
+            <li>
+                <p data-js="reveal"> "มิกซ์ สหภาพ วงศ์ราษฎร์" เกิดวันที่ 22 กรกฏาคม พ.ศ.2541 </p>
+                <p data-js="reveal">ด้านการศึกษาเขาจบการศึกาาระดับมัธยมศึกษา
+                <p data-js="reveal">จากโรงเรียนบุญวาทย์วิทยาลัย จังหวัดลำปาง ปัจจุบันเป็นนิสิตชั้นปีที่ 3 </p>
+                <p data-js="reveal">คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย </p>
+                <p data-js="reveal">นอกจากนี้มิกซ์ยังเป็นหนุ่มฮอตประจำมหาวิทยาลัย
+                    การันตีความฮอตจากเพจ Chula Cute Boy </p>
+                <p data-js="reveal">รวมทั้งยังเคยได้รับหน้าที่เป็นหนึ่งในผู้ถือธงของฝั่งจุฬาฯ
+                    ในงานฟุตบอลประเพณีฯ ครั้งที่ 73 อีกด้วย </p>
+            </li>
+
+
+            <li>
+                <p data-js="reveal">ด้านชีวิตในวงการบันเทิง มิกซ์ สหภาพ
+                เริ่มเข้าวงการตั้งแต่อายุ 16 ปี มีไปแคสต์งานบ้าง
+                ถ่ายแบบ ถ่ายโฆษณา</p>
+            </li>
+
+            <li>
+                <p data-js="reveal">พอช่วงที่เข้ามหาวิทยาลัยแรก ๆ
+                ก็มีคนนำรูปของเขาไปลงเพจ Chula cute boy</p>
+            </li>
+
+
+
+            <li>
+                <p data-js="reveal">ทำให้มีคนมากดติดตามเยอะขึ้น ต่อมามีโอกาสได้เล่นมิวสิกวิดีโอ</p>
+                <p data-js="reveal">เพลง มะงึง ๆ อุ๋ง ๆ วง Cute Chef
+                Thailand ซึ่งเขานั้นเป็นสมาชิกในวง</p>
+                <p data-js="reveal">จนกระทั่งมีโอกาสได้ไปแคสติ้งบทของ เธียร ครูอาสา</p>
+            </li>
+            <li>
+
+                <p data-js="reveal">ในซีรีส์วายเรื่อง นิทานพันดาว ที่แฟน ๆ รอคอย
+                เรียกว่าประเดิมผลงานการแสดงแบบเต็มตัวเลยก็ว่าได้</p>
+                <p data-js="reveal">แถมยังฟินคูณสอง เพราะได้เล่นในบทนำกับเพื่อนซี้ตั้งแต่สมัยมัธยมอย่าง
+                เอิร์ท พิรพัฒน์ ที่รับบทเป็น หัวหน้าภู เจ้าหน้าที่อุทยานฯ นั่นเอง สำหรับ</p>
+                <p data-js="reveal">นิทานพันดาว ทุกวันศุกร์ เวลา 20.30 น. ทางช่อง GMM25 เริ่มวันศุกร์ที่ 29 มกราคม
+                นี้</p>
+
+            </li>
+        </ul>
+    </main>
+    <script src="main.js"></script>
 </body>
+
 </html>
