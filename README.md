@@ -13,6 +13,13 @@
   ![image](https://user-images.githubusercontent.com/71396409/133885112-63ef815f-ff5b-4953-ad4b-b6e8bae87ea0.png)<br>
   <br>
   ![image](https://user-images.githubusercontent.com/71396409/133885107-b8c161bd-c431-48ea-bbf3-87e245f38832.png)<br>
+  <br>
+  <br>
+  website สำหรับทดลอง  <br>
+  https://camwiegert.github.io/baffle/#demo<br>
+  <br>
+   website สำหรับดึง CDN <br><br>
+  https://www.jsdelivr.com/package/npm/baffle<br>
 
   
 
